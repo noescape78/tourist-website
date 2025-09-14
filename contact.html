@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — BEHAPPY</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="images/LOGO.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bh-bg">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/LOGO.png" alt="BEHAPPY logo" class="logo">
+        <span class="brand-text">BEHAPPY</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#faqs">FAQs</a></li>
+          <li><a href="#" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="mobileMenuBtn2" class="hamburger" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div id="mobileMenu2" class="mobile-nav">
+      <a href="index.html#destinations">Destinations</a>
+      <a href="index.html#team">Team</a>
+      <a href="index.html#faqs">FAQs</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-header">
+      <h1>Contact Us</h1>
+      <p>We’re here to help — send a message and our travel experts will respond within 24 hours.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required placeholder="Your full name" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@domain.com" />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91 9xx xxxx xxx" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Tell us about your ideal trip..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+
+        <div id="formAlert" class="form-alert" aria-live="polite"></div>
+      </form>
+
+      <aside class="contact-info animate-fadein">
+        <h3>Office & Support</h3>
+        <p><strong>Head Office:</strong><br/>BEHAPPY Travel, 21 Experience Ave, Mumbai, India</p>
+        <p><strong>Support:</strong><br/>support@behappy.travel · +1 (800) 555-0123</p>
+
+        <h4>Office hours</h4>
+        <p>Mon–Fri: 09:00–18:00 (IST) · 24/7 Emergency Support</p>
+
+        <h4>Find us</h4>
+        <!-- Map placeholder: replace with real embed if needed -->
+        <div class="map-placeholder" role="img" aria-label="Office location map">
+          <p>Map preview — add a Google Maps embed here when ready.</p>
+        </div>
+
+        <h4>Connect with leaders</h4>
+        <div class="leader-mini">
+          <img src="images/PEOPLE1.jpg" alt="Leader" />
+          <div>
+            <strong>Arjun Singh</strong>
+            <a href="https://www.linkedin.com/in/arjun-singh" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="leader-mini">
+          <img src="images/PEOPLE2.jpg" alt="Leader" />
+          <div>
+            <strong>Priya Mehta</strong>
+            <a href="https://www.linkedin.com/in/priyamehta" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="leader-mini">
+          <img src="images/PEOPLE3.jpg" alt="Leader" />
+          <div>
+            <strong>Rahul Verma</strong>
+            <a href="https://www.linkedin.com/in/rahul-verma" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h2>BeHappy Travel</h2>
+      <p>We bring the world closer to you. Explore, experience, and enjoy with our premium travel packages worldwide.</p>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#destinations-container">Destinations</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-subscribe">
+      <h3>Newsletter</h3>
+      <p>Subscribe for travel updates & exclusive offers.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>© 2025 <span class="brand">BeHappy Travel</span>. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

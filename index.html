@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BEHAPPY — Travel & Tours</title>
+  <meta name="description" content="BEHAPPY — premium travel packages, curated tours & expert guides." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="images/LOGO.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bh-bg">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="images/LOGO.png" alt="BEHAPPY logo" class="logo">
+        <span class="brand-text">BEHAPPY</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="contact.html" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="mobileMenuBtn" class="hamburger" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-nav">
+      <a href="#destinations">Destinations</a>
+      <a href="#team">Team</a>
+      <a href="#faqs">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url('images/BACKGROUND1.jpg');">
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-left animate-fadeup">
+          <h1>Explore the world. Travel happy.</h1>
+          <p class="lead">Curated packages · Transparent pricing · Expert local partners</p>
+
+          <div class="search-wrap">
+            <label for="searchDest" class="visually-hidden">Search destination</label>
+            <input id="searchDest" type="search" placeholder="Search destination e.g. China, Italy, NewYork..." autocomplete="off" aria-label="Search destinations" />
+            <button id="searchBtn" aria-label="Search">Search</button>
+            <ul id="searchSuggestions" class="suggestions" aria-hidden="true"></ul>
+          </div>
+
+          <div class="quick-stats">
+            <div><strong>500+</strong><span>Packages</span></div>
+            <div><strong>120</strong><span>Countries</span></div>
+            <div><strong>24/7</strong><span>Support</span></div>
+          </div>
+        </div>
+
+        <div class="hero-right animate-float">
+          <img src="images/PEOPLE1.jpg" alt="Travel leaders" class="hero-people" />
+          <div class="badge">Featured</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS GRID -->
+    <section id="destinations" class="container section">
+      <div class="section-header">
+        <h2>Popular Destinations</h2>
+        <p>Handpicked packages with transparent pricing & reviews.</p>
+      </div>
+
+      <div id="destinationsGrid" class="grid"></div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="container section">
+      <div class="section-header">
+        <h2>Our Leaders</h2>
+        <p>Experienced team that builds and delivers the best experiences.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team cards generated from JS -->
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" class="container section">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Clear answers to common queries — we keep it simple and honest.</p>
+      </div>
+
+      <div class="faqs">
+        <!-- FAQs populated by JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- DESTINATION DETAIL MODAL -->
+  <div id="detailModal" class="modal" aria-hidden="true" role="dialog" aria-label="Destination details">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close details">&times;</button>
+      <div class="modal-body">
+        <div class="modal-left">
+          <img id="modalHero" src="" alt="Destination image" />
+        </div>
+        <div class="modal-right">
+          <h3 id="modalTitle">Title</h3>
+          <div class="meta">
+            <span id="modalPrice" class="price"></span>
+            <span id="modalRating" class="rating"></span>
+          </div>
+          <p id="modalDesc"></p>
+
+          <h4>Packages & Offers</h4>
+          <div id="modalPackages" class="packages"></div>
+
+          <div class="modal-actions">
+            <a href="#" id="bookNowBtn" class="btn primary">Book Now</a>
+            <button id="viewMoreBtn" class="btn outline">View More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Only One Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-about">
+        <h2>BeHappy Travel</h2>
+        <p>We bring the world closer to you. Explore, experience, and enjoy with our premium travel packages worldwide.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 BeHappy Travel. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
